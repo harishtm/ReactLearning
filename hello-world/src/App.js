@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet' // ommit .js extension
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          Hello World
-      </header>
+      <Greet></Greet>
     </div>
   );
 }
