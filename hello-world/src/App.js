@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Greet from './components/Greet' // ommit .js extension
+import { Greet } from './components/Greet' // ommit .js extension
 
 function App() {
   return (
