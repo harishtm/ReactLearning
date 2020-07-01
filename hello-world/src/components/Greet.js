@@ -1,8 +1,14 @@
 import React from 'react';
 
-// function Greet(){
-//     return <h1> Welcome to React JS </h1>;
-// }
+/*
+    Why is it been react import and used any where
+     - JSX translates into React.createElement which inturn uses the react library
+*/
+/*
+function Greet(){
+    return <h1> Welcome to React JS </h1>;
+}
+*/
 
 // ES6 arrow functions
 

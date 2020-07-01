@@ -3,6 +3,8 @@ import React from 'react';
 
 /* 
     Using JSX Approach
+    
+    1. Elegant, readable, simple
 */
 
 /*
