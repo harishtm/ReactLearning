@@ -4,7 +4,7 @@ import './App.css';
 import { Greet } from './components/Greet'; // ommit .js extension
 import { WelcomeMessage } from './components/Welcome';
 import Hello from './components/Hello';
-import { GreetMessage } from './components/GreetWithName';
+import { GreetMessage, EmployeeGreet } from './components/GreetWithName';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <button>Action</button>
       </GreetMessage>
       <GreetMessage firstname="Stev" lastname="Smith"/>
+      <EmployeeGreet firstname="Ricky" lastname="Pointing"/>
     </div>
   );
 }

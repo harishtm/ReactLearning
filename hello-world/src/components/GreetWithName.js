@@ -10,5 +10,14 @@ export const GreetMessage = (props) => {
     )
 }
 
+export class EmployeeGreet extends Component {
+    render () {
+        return (
+            <div>
+                <h1> Welcome {this.props.firstname}, {this.props.lastname} </h1>
+            </div>
+        )
+    }
+}
 
 // export default GreetMessage;
