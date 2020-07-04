@@ -6,6 +6,7 @@ import { WelcomeMessage } from './components/Welcome';
 import Hello from './components/Hello';
 import { GreetMessage, EmployeeGreet } from './components/GreetWithName';
 import Message from './components/Message';
+import Counter from './components/Counter'
 
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
       {/* <GreetMessage firstname="Stev" lastname="Smith"/>
       <EmployeeGreet firstname="Ricky" lastname="Pointing"/> */}
 
-      <Message/>
+      {/* <Message/> */}
+
+      <Counter/>
 
     </div>
   );
