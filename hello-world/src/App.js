@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       {/* <Greet></Greet> */}
       
-      {/* <WelcomeMessage/> */}
+      <WelcomeMessage fname="John" lname="Smith"/>
       
       {/* <Hello/> */}
       
@@ -34,7 +34,7 @@ function App() {
 
       {/* <Counter/> */}
 
-      <DestructureProps fname="John" lname="Smith"/>
+      {/* <DestructureProps fname="John" lname="Smith"/> */}
 
     </div>
   );
