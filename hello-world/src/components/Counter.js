@@ -33,9 +33,10 @@ class Counter extends Component {
     */
 
     increment() {
-        this.setState((prevState) => {
+        this.setState((prevState) => ({
             count: prevState.count + 1
-        }, () => {})
+        }), () => {console.log("Call Back (Asynchronus)", this.state.count)})
+        console.log("Synchronus - call", this.state.count)
     }
 
     incrementFive() {
