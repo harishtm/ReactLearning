@@ -6,7 +6,8 @@ import { WelcomeMessage } from './components/Welcome';
 import Hello from './components/Hello';
 import { GreetMessage, EmployeeGreet } from './components/GreetWithName';
 import Message from './components/Message';
-import Counter from './components/Counter'
+import Counter from './components/Counter';
+import DestructureProps from './components/DestructuringPropsDemo';
 
 
 function App() {
@@ -31,7 +32,9 @@ function App() {
 
       {/* <Message/> */}
 
-      <Counter/>
+      {/* <Counter/> */}
+
+      <DestructureProps fname="John" lname="Smith"/>
 
     </div>
   );
