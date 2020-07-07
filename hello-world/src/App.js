@@ -8,6 +8,7 @@ import { GreetMessage, EmployeeGreet } from './components/GreetWithName';
 import Message from './components/Message';
 import Counter from './components/Counter';
 import DestructureProps from './components/DestructuringPropsDemo';
+import {FunctionClick, ClassClick} from './components/EventHandleDemo';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       {/* <Greet></Greet> */}
       
-      <WelcomeMessage fname="John" lname="Smith"/>
+      {/* <WelcomeMessage fname="John" lname="Smith"/> */}
       
       {/* <Hello/> */}
       
@@ -35,6 +36,8 @@ function App() {
       {/* <Counter/> */}
 
       {/* <DestructureProps fname="John" lname="Smith"/> */}
+
+      <FunctionClick/><br/><ClassClick/>
 
     </div>
   );
