@@ -9,6 +9,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import DestructureProps from './components/DestructuringPropsDemo';
 import {FunctionClick, ClassClick} from './components/EventHandleDemo';
+import { EventBind } from './components/EventBind';
 
 
 function App() {
@@ -37,7 +38,9 @@ function App() {
 
       {/* <DestructureProps fname="John" lname="Smith"/> */}
 
-      <FunctionClick/><br/><ClassClick/>
+      {/* <FunctionClick/><br/><ClassClick/> */}
+
+      <EventBind/>
 
     </div>
   );
