@@ -10,6 +10,7 @@ import Counter from './components/Counter';
 import DestructureProps from './components/DestructuringPropsDemo';
 import {FunctionClick, ClassClick} from './components/EventHandleDemo';
 import { EventBind } from './components/EventBind';
+import ParentComponent from './components/ParentComponent'
 
 
 function App() {
@@ -40,7 +41,9 @@ function App() {
 
       {/* <FunctionClick/><br/><ClassClick/> */}
 
-      <EventBind/>
+      {/* <EventBind/> */}
+
+      <ParentComponent/>
 
     </div>
   );
