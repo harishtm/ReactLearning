@@ -10,24 +10,23 @@ class PersonDisplay extends Component {
     }
 
     constructTableBody() {
-        console.log("====",this.state)
 
-        let tbodyData = this.state.persondetails.map(function(obj){
-            return <tbody>
-            <tr>
-                <td>
-                    {obj.name}
-                </td>
-                <td>
-                    {obj.age}
-                </td>
-                <td>
-                    {obj.skill}
-                </td>
-            </tr>
-        </tbody>
-        });
-        return tbodyData;
+        // Works with or without small brakets
+        // but tbody has to start in the return statement line only if parenthesis is not used
+
+        return (
+                <tbody>
+                    { 
+                        this.state.persondetails.map( row => 
+                            <tr key={row.id}>
+                                <td>{row.name}</td>
+                                <td>{row.age}</td>
+                                <td>{row.skill}</td>
+                            </tr>
+                        )
+                    }
+                </tbody>
+            )
     }
     
     
