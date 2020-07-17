@@ -1,8 +1,9 @@
 import React, { Componet } from 'react';
-import PersonDisplay from './PersonDisplay';
+import {PersonDisplay, Person} from './PersonDisplay';
 
 
 function NameList() {
+    const names = ['Smith', 'John', 'Diana'];
     const namesdata = [
         {
             id: 1,
@@ -28,9 +29,20 @@ function NameList() {
             age: 25,
             skill: 'Java'
         }];
+
+    const personList = namesdata.map(person => <Person key={person.id} person={person}/>)
+    const nameList = names.map((name, index) => <h2 key={index}>{name}</h2>)
+
     return (
-        <PersonDisplay persondetails={ namesdata } />
+        <div>
+            <PersonDisplay persondetails={ namesdata } />
+            <hr/>
+            {personList}
+            <hr/>
+            {nameList}
+        </div>
     )
+
 }
 
 export default NameList;

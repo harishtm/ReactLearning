@@ -11,8 +11,11 @@ class PersonDisplay extends Component {
 
     constructTableBody() {
 
-        // Works with or without small brakets
-        // but tbody has to start in the return statement line only if parenthesis is not used
+        /* 
+            Works with or without small brakets
+            but tbody has to start in the return statement line 
+            only when if parenthesis is not used
+        */
 
         return (
                 <tbody>
@@ -54,4 +57,12 @@ class PersonDisplay extends Component {
     }
 }
 
-export default PersonDisplay;
+function Person({person}) {
+    return (
+        <div>
+            {person.name}
+        </div>
+    )
+}
+
+export {PersonDisplay, Person};
