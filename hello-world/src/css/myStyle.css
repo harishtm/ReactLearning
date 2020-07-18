@@ -1,0 +1,12 @@
+.primary {
+    color: orange;
+}
+
+.font-sm {
+    font-size: small;
+}
+
+.font-lg {
+    /* font-size: x-large; */
+    font-size: 75px;
+}

@@ -13,6 +13,9 @@ import { EventBind } from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import {StyleSheet, Inline} from './components/Stylesheet';
+import './css/appStyle.css';
+import style from './css/appStyle.module.css';
 
 
 function App() {
@@ -49,7 +52,12 @@ function App() {
 
       {/* <UserGreeting/> */}
 
-      <NameList/>
+      {/* <NameList/> */}
+
+      <StyleSheet primary={true} font_size={'large'}/>
+      <Inline/>
+      <h1 className='error'> Error </h1>
+      <h1 className={style.success}> Success </h1>
 
     </div>
   );

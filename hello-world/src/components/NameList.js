@@ -33,6 +33,20 @@ function NameList() {
     const personList = namesdata.map(person => <Person key={person.id} person={person}/>)
     const nameList = names.map((name, index) => <h2 key={index}>{name}</h2>)
 
+    /*
+        Index as key (Anti patterns)
+
+        When to user index as key
+            1. The item in your list do not have a unique id.
+            2. The list is a static list and will not change.
+            3. The list will never be reordered or filtered.
+        
+        Alternates use npm library to generate unique id or try Hashing
+        out unique value with existing properties.
+        Try avoiding the use of index as key.
+        In fact react uses the index as the key if at all do not specify the key prop.
+    */
+
     return (
         <div>
             <PersonDisplay persondetails={ namesdata } />
