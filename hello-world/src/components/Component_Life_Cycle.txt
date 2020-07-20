@@ -1,0 +1,27 @@
+Component Life Cycle Methods
+==============================================================================
+
+- When we create a react component the component goes through several stages.
+  In its life cycle react provides us with built-in methods that we can override
+  at particular stage in the life cycle.
+
+- Life cycle methods available for class component. These methods doesn't exists
+  on functional component. With the new feature of the hooks there is the use affect
+  hoo which partially relates to the life cycle hooks.
+
+========================================================================================
+
+- LifeCycle Methods
+
+    Mounting - Is called when an instance of a component is being created and inserted
+               into the DOM.
+
+    Updating - Is called when a component is being re-rendered as a result of changes
+               to either its props or state. 
+
+    Unmounting - Is called when a component is being removed from the DOM
+
+    Error Handling - When there is an error during rendering in a lifecycle method, or
+                     in the construction of any child component
+
+========================================================================================
