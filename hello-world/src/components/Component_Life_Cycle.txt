@@ -25,3 +25,14 @@ Component Life Cycle Methods
                      in the construction of any child component
 
 ========================================================================================
+
+1. Mounting methods - constructor, static method getDerivedStateFromProps, render and
+                     ComponentDidMount
+
+2. Updating methods - static method getDerivedStateFromProps again,
+                      shouldComponentUpdate, render, getSnapshotBeforeUpdate and
+                      ComponentDidMount
+
+3.Unmounting methods - ComponentWillUnmount (only one method)
+
+4. Error Handling methods - static getDerivedStateFromProps and ComponentDidMount
