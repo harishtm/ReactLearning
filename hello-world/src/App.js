@@ -18,6 +18,7 @@ import './App.css';
 // import style from './css/appStyle.module.css';
 
 import Form from './components/Form.js';
+import LifecycleA from './components/LifecycleA';
 
 
 function App() {
@@ -61,7 +62,9 @@ function App() {
       <h1 className='error'> Error </h1>
       <h1 className={style.success}> Success </h1> */}
 
-      <Form/>
+      {/* <Form/> */}
+
+      <LifecycleA/>
 
     </div>
   );
