@@ -18,7 +18,7 @@ import './App.css';
 // import style from './css/appStyle.module.css';
 
 import Form from './components/Form.js';
-import LifecycleA from './components/LifecycleA';
+import LifecycleX from './components/LifecycleX';
 
 
 function App() {
@@ -64,7 +64,9 @@ function App() {
 
       {/* <Form/> */}
 
-      <LifecycleA/>
+      {/* <LifecycleA/> */}
+
+      <LifecycleX/>
 
     </div>
   );
