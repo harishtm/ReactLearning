@@ -17,8 +17,11 @@ import './App.css';
 // import './css/appStyle.css';
 // import style from './css/appStyle.module.css';
 
-import Form from './components/Form.js';
-import LifecycleX from './components/LifecycleX';
+
+// import Form from './components/Form.js';
+// import LifecycleX from './components/LifecycleX';
+// import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 
 function App() {
@@ -66,7 +69,11 @@ function App() {
 
       {/* <LifecycleA/> */}
 
-      <LifecycleX/>
+      {/* <LifecycleX/> */}
+
+      {/* <FragmentDemo/> */}
+
+      <Table/>
 
     </div>
   );
