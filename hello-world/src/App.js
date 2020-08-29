@@ -21,7 +21,9 @@ import './App.css';
 // import Form from './components/Form.js';
 // import LifecycleX from './components/LifecycleX';
 // import FragmentDemo from './components/FragmentDemo';
-import Table from './components/Table';
+// import Table from './components/Table';
+
+import ParentComponent from './components/ParentCompoent';
 
 
 function App() {
@@ -73,7 +75,9 @@ function App() {
 
       {/* <FragmentDemo/> */}
 
-      <Table/>
+      {/* <Table/> */}
+
+      <ParentComponent/>
 
     </div>
   );
