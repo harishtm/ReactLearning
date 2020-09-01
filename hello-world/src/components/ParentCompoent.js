@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import RegComp from './RegComp';
 import PureComp from './PureComp';
 
 
-class ParentComp extends Component {
+class ParentComp extends PureComponent {
 
     constructor(props) {
         super(props)
@@ -22,6 +22,7 @@ class ParentComp extends Component {
     }
 
     render() {
+        console.log("*********** Parent Component ***********")
         return (
             <div>
                 Parent Component

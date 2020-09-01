@@ -1,0 +1,29 @@
+Regular Component
+    - A regular component does not implement the shouldComponentUpdate method. It always
+      returns true by default
+
+
+Pure component
+    - A pure component implement shouldComponentUpdate with a shallow props and
+      state comparision
+
+
+Shallow comparision (SC)
+
+    - Primitive Types (Numbers, String, boolean etc)
+        1. a (SC) b returns true if a and b have same value and are of the same type
+
+        Ex: var a = [1,2,3];
+            var b = [1,2,3];
+            var c == a;
+
+            var ab_eq = (a === b) // false
+            var ac_eq = (a === c) // true
+
+            a (SC) b returns false even though the items in both the arrays are same
+            those two arrays do not reference the same object
+
+            a (SC) c returns true because they point to the same object
+
+    - Complex Types (objects)
+        1. a (SC) b returns true if a and b reference the exact same object
