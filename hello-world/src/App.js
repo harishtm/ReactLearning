@@ -23,7 +23,8 @@ import './App.css';
 // import FragmentDemo from './components/FragmentDemo';
 // import Table from './components/Table';
 
-import ParentComponent from './components/ParentCompoent';
+// import ParentComponent from './components/ParentComp';
+import ParentMemoComp from './components/ParentMemoComp';
 
 
 function App() {
@@ -77,7 +78,9 @@ function App() {
 
       {/* <Table/> */}
 
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+
+      <ParentMemoComp/>
 
     </div>
   );
