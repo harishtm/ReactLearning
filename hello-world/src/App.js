@@ -25,6 +25,7 @@ import './App.css';
 
 // import ParentComponent from './components/ParentComp';
 import ParentMemoComp from './components/ParentMemoComp';
+import RefsDemo from './components/RefsDemo';
 
 
 function App() {
@@ -80,7 +81,9 @@ function App() {
 
       {/* <ParentComponent/> */}
 
-      <ParentMemoComp/>
+      {/* <ParentMemoComp/> */}
+
+      <RefsDemo/>
 
     </div>
   );
