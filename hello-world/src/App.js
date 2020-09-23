@@ -26,6 +26,7 @@ import './App.css';
 // import ParentComponent from './components/ParentComp';
 import ParentMemoComp from './components/ParentMemoComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput'; 
 
 
 function App() {
@@ -83,7 +84,9 @@ function App() {
 
       {/* <ParentMemoComp/> */}
 
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+
+      <FocusInput/>
 
     </div>
   );
