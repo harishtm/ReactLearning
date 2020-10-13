@@ -31,7 +31,8 @@ import './App.css';
 // import FRParentInput from './components/FRParentInput';
 
 
-import PortalDemo from './components/PortalDemo'
+import PortalDemo from './components/PortalDemo';
+import PoratlChild from './components/PortalChild';
 
 
 function App() {
@@ -95,7 +96,9 @@ function App() {
 
       {/* <FRParentInput/> */}
 
-      <PortalDemo />
+      {/* <PortalDemo /> */}
+
+      <PoratlChild/>
 
     </div>
   );
