@@ -31,8 +31,11 @@ import './App.css';
 // import FRParentInput from './components/FRParentInput';
 
 
-import PortalDemo from './components/PortalDemo';
-import PoratlChild from './components/PortalChild';
+// import PortalDemo from './components/PortalDemo';
+// import PoratlChild from './components/PortalChild';
+
+import SimpleErrorHandling from './components/SimpleErrorHandling';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 function App() {
@@ -98,7 +101,19 @@ function App() {
 
       {/* <PortalDemo /> */}
 
-      <PoratlChild/>
+      {/* <PoratlChild/> */}
+
+      <ErrorBoundary>
+        <SimpleErrorHandling heroName="SpiderMan"/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <SimpleErrorHandling heroName="SuperMan"/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <SimpleErrorHandling heroName="Joker"/>
+      </ErrorBoundary>
+          
+      
 
     </div>
   );
