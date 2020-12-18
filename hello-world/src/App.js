@@ -34,8 +34,11 @@ import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import PoratlChild from './components/PortalChild';
 
-import SimpleErrorHandling from './components/SimpleErrorHandling';
-import ErrorBoundary from './components/ErrorBoundary';
+// import SimpleErrorHandling from './components/SimpleErrorHandling';
+// import ErrorBoundary from './components/ErrorBoundary';
+
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 
 function App() {
@@ -103,7 +106,7 @@ function App() {
 
       {/* <PoratlChild/> */}
 
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <SimpleErrorHandling heroName="SpiderMan"/>
       </ErrorBoundary>
       <ErrorBoundary>
@@ -112,7 +115,10 @@ function App() {
       <ErrorBoundary>
         <SimpleErrorHandling heroName="Joker"/>
       </ErrorBoundary>
-          
+           */}
+
+      <ClickCounter/>
+      <HoverCounter/>
       
 
     </div>
