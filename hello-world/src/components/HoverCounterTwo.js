@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import withCounter from './withCounter';
 
 
-class HoverCounter extends Component {
+class HoverCounterTwo extends Component {
 
     render() {
         const {count, incrementCount} = this.props
@@ -14,4 +13,4 @@ class HoverCounter extends Component {
     }
 }
 
-export default withCounter(HoverCounter);
+export default HoverCounterTwo;

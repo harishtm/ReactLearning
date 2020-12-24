@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import { Greet } from './components/Greet'; // ommit .js extension
 // import { WelcomeMessage } from './components/Welcome';
@@ -37,8 +37,12 @@ import './App.css';
 // import SimpleErrorHandling from './components/SimpleErrorHandling';
 // import ErrorBoundary from './components/ErrorBoundary';
 
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+
+import RenderPropCounter from './components/RenderPropCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
 
 
 function App() {
@@ -117,8 +121,33 @@ function App() {
       </ErrorBoundary>
            */}
 
-      <ClickCounter name="John"/>
-      <HoverCounter/>
+      {/* <ClickCounter name="John"/>
+      <HoverCounter/> */}
+
+      {/* This is one way of rendering props */}
+      {/* <RenderPropCounter
+        render={ (count, incrementCount) => 
+                <ClickCounterTwo count={count} incrementCount={incrementCount}>
+                </ClickCounterTwo>}>
+      </RenderPropCounter>
+
+      <RenderPropCounter
+        render={ (count, incrementCount) => 
+                <HoverCounterTwo count={count} incrementCount={incrementCount}>
+                </HoverCounterTwo>}>
+      </RenderPropCounter> */}
+
+      <RenderPropCounter>
+        { (count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+        )}
+      </RenderPropCounter>
+
+      <RenderPropCounter>
+        { (count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount}/>
+        )}
+      </RenderPropCounter>
       
 
     </div>
