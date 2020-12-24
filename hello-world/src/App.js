@@ -117,7 +117,7 @@ function App() {
       </ErrorBoundary>
            */}
 
-      <ClickCounter/>
+      <ClickCounter name="John"/>
       <HoverCounter/>
       
 
