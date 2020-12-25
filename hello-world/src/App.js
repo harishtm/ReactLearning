@@ -40,9 +40,12 @@ import './App.css';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
 
-import RenderPropCounter from './components/RenderPropCounter';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
+// import RenderPropCounter from './components/RenderPropCounter';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 
 function App() {
@@ -137,7 +140,7 @@ function App() {
                 </HoverCounterTwo>}>
       </RenderPropCounter> */}
 
-      <RenderPropCounter>
+      {/* <RenderPropCounter>
         { (count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount}/>
         )}
@@ -147,8 +150,11 @@ function App() {
         { (count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount}/>
         )}
-      </RenderPropCounter>
+      </RenderPropCounter> */}
       
+      <UserProvider value="John Smith">
+        <ComponentC/>
+      </UserProvider>
 
     </div>
   );
