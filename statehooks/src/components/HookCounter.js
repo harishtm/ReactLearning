@@ -14,10 +14,10 @@ Rules of Hooks
 
 function HookCounter() {
 
-    const [count, setCount] = useState(0);
+    const [count, incrementCount] = useState(0);
     return (
         <div>
-            <button onClick={() => setCount(count+1)}> Count  { count }</button>
+            <button onClick={() => incrementCount(count+1)}> Count  { count }</button>
         </div>
     )
 }
