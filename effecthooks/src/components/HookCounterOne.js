@@ -17,6 +17,8 @@ function HookCounterOne() {
         on count change then only update else do not update
         (i.e componentDidUpdate) in class Component
     */
+
+    /* Here count is a kind of conditional render useEffect second argument*/
     useEffect(() => {
         console.log('useEffect - Updating document title')
         document.title = `You Clicked ${count} times`
