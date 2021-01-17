@@ -3,9 +3,11 @@ import './App.css';
 // import CounterOne from './components/CounterOne';
 // import CounterTwo from './components/CounterTwo';
 // import CounterThree from './components/CounterThree';
-import ComponentA from './reduceWithContext/ComponentA'
-import ComponentB from './reduceWithContext/ComponentB'
-import ComponentC from './reduceWithContext/ComponentC'
+// import ComponentA from './reduceWithContext/ComponentA'
+// import ComponentB from './reduceWithContext/ComponentB'
+// import ComponentC from './reduceWithContext/ComponentC'
+// import DataFetchingOne from './components/DataFetchingOne'
+import DataFetchingTwo from './components/DataFetchingTwo';
 
 
 export const CountContext = React.createContext();
@@ -28,22 +30,25 @@ const reducer = (currentState, action) => {
 
 function App() {
 
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
     <div className="App">
-      Count - {count}
+      {/* Count - {count} */}
       {/* <CounterOne/> */}
       {/* <CounterTwo/> */}
       {/* <CounterThree/> */}
 
-      <CountContext.Provider
+      {/* <CountContext.Provider
         value={{countState: count, countDispatch: dispatch}}
       >
           <ComponentA/>
           <ComponentB/>
           <ComponentC/>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+
+      {/* <DataFetchingOne/> */}
+      <DataFetchingTwo/>
       
     </div>
   );
