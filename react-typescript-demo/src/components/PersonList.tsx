@@ -11,7 +11,7 @@ export const PersonList = (props: PersonProps) => {
             {
                 props.names.map(obj => {
                     return(
-                        <div>
+                        <div key={obj.fname}>
                             {obj.fname} {obj.lname}
                         </div>
                     )
