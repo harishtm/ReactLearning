@@ -1,9 +1,11 @@
 import './App.css';
-import { Greet } from './components/Greet';
-import { Person } from './components/Person';
-import { PersonList } from './components/PersonList';
+// import { Greet } from './components/Greet';
+// import { Person } from './components/Person';
+// import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
 
 function App() {
+  /*
   const personName = {
     fname: 'John',
     lname: 'Smith'
@@ -14,13 +16,15 @@ function App() {
         {fname: 'James', lname: 'Walker'},
         {fname: 'Steve', lname: 'Jobs'}
       ]
+    */
   return (
     <div className="App">
-      <Greet name="John Smith" age={20} isLoggedIn={true}/>
-      <hr/>
-      <Person name={personName}/>
-      <hr/>
-      <PersonList names={all_person}/>
+      {/*
+        <Greet name="John Smith" age={20} isLoggedIn={true}/><hr/>
+        <Person name={personName}/><hr/>
+        <PersonList names={all_person}/>
+      */}
+      <Status status="loading"/>
     </div>
   );
 }
