@@ -2,7 +2,9 @@ import './App.css';
 // import { Greet } from './components/Greet';
 // import { Person } from './components/Person';
 // import { PersonList } from './components/PersonList';
-import { Status } from './components/Status';
+// import { Status } from './components/Status';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
 
 function App() {
   /*
@@ -23,8 +25,11 @@ function App() {
         <Greet name="John Smith" age={20} isLoggedIn={true}/><hr/>
         <Person name={personName}/><hr/>
         <PersonList names={all_person}/>
+        <Status status="loading"/>
       */}
-      <Status status="loading"/>
+      <Oscar>
+        <Heading>Sample Child Props Demo</Heading>
+      </Oscar>
     </div>
   );
 }
