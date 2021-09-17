@@ -1,10 +1,11 @@
 import './App.css';
+import { Button } from './components/Button';
 // import { Greet } from './components/Greet';
 // import { Person } from './components/Person';
 // import { PersonList } from './components/PersonList';
 // import { Status } from './components/Status';
-import { Heading } from './components/Heading';
-import { Oscar } from './components/Oscar';
+// import { Heading } from './components/Heading';
+// import { Oscar } from './components/Oscar';
 
 function App() {
   /*
@@ -26,10 +27,16 @@ function App() {
         <Person name={personName}/><hr/>
         <PersonList names={all_person}/>
         <Status status="loading"/>
-      */}
+
       <Oscar>
         <Heading>Sample Child Props Demo</Heading>
       </Oscar>
+      */}
+      <Button
+        handleClick={(event, id) => {
+            console.log('Click event', id)
+          }}
+      />
     </div>
   );
 }
