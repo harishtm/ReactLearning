@@ -1,6 +1,7 @@
 import './App.css';
-import { Button } from './components/Button';
-import { Input } from './components/Input';
+import { Container } from './components/Container';
+// import { Button } from './components/Button';
+// import { Input } from './components/Input';
 // import { Greet } from './components/Greet';
 // import { Person } from './components/Person';
 // import { PersonList } from './components/PersonList';
@@ -33,12 +34,15 @@ function App() {
         <Heading>Sample Child Props Demo</Heading>
       </Oscar>
       */}
-      <Button
-        handleClick={(event, id) => {
-            console.log('Click event', id)
-          }}
-      />
-      <Input value='' handleChange={(event) => {console.log(event)}}/>
+      {/*
+        <Button
+          handleClick={(event, id) => {
+              console.log('Click event', id)
+            }}
+        />
+        <Input value='' handleChange={(event) => {console.log(event)}}/>
+      */}
+      <Container style={{border: '10px solid black', padding: '1rem'}}/>
     </div>
   );
 }
