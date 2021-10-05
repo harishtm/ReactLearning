@@ -1,6 +1,7 @@
 import './App.css';
-import { LoggedIn } from './components/state/LoggedIn';
-import { User } from './components/state/User';
+import { Counter } from './components/Counter';
+// import { LoggedIn } from './components/state/LoggedIn';
+// import { User } from './components/state/User';
 // import { Container } from './components/Container';
 // import { Button } from './components/Button';
 // import { Input } from './components/Input';
@@ -37,15 +38,20 @@ function App() {
       </Oscar>
       */}
       {/*
+
         <Button
           handleClick={(event, id) => {
               console.log('Click event', id)
             }}
         />
+
         <Input value='' handleChange={(event) => {console.log(event)}}/>
+
         <Container style={{border: '10px solid black', padding: '1rem'}}/>
+
+        <User/>
       */}
-      <User/>
+      <Counter/>
     </div>
   );
 }
