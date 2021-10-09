@@ -1,5 +1,7 @@
 import './App.css';
-import { Counter } from './components/Counter';
+import { Box } from './components/context/Box';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+// import { Counter } from './components/Counter';
 // import { LoggedIn } from './components/state/LoggedIn';
 // import { User } from './components/state/User';
 // import { Container } from './components/Container';
@@ -50,8 +52,12 @@ function App() {
         <Container style={{border: '10px solid black', padding: '1rem'}}/>
 
         <User/>
+      
+        <Counter/>
       */}
-      <Counter/>
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
     </div>
   );
 }
