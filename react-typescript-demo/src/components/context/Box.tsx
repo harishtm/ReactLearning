@@ -8,7 +8,7 @@ export const Box = () => {
 
     return(
         <div style={ {backgroundColor: theme.primary.main}}>
-            Theme Context
+            Box Theme Context
         </div>
     )
 }
