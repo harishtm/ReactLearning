@@ -1,7 +1,9 @@
 import './App.css';
-import { Box } from './components/context/Box';
-import { Rectangle } from './components/context/Rectangle';
-import { ThemeContextProvider } from './components/context/ThemeContext';
+import { User } from './components/context/User';
+import { UserContextProvide } from './components/context/UserContext';
+// import { Box } from './components/context/Box';
+// import { Rectangle } from './components/context/Rectangle';
+// import { ThemeContextProvider } from './components/context/ThemeContext';
 // import { Counter } from './components/Counter';
 // import { LoggedIn } from './components/state/LoggedIn';
 // import { User } from './components/state/User';
@@ -55,8 +57,7 @@ function App() {
         <User/>
       
         <Counter/>
-      */}
-      
+
       <ThemeContextProvider>
         <Box/>
         <Rectangle/>
@@ -65,6 +66,12 @@ function App() {
       <ThemeContextProvider>
         <Rectangle/>
       </ThemeContextProvider>
+      */}
+
+      <UserContextProvide>
+        <User/>
+      </UserContextProvide>
+
     </div>
   );
 }

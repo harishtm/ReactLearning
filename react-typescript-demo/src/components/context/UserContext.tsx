@@ -15,6 +15,7 @@ type UserContextType = {
     setUser: React.Dispatch<React.SetStateAction<AuthUser | null>>
 }
 
+// null or Type Assertion
 export const UserContext = createContext({} as UserContextType)
 
 export const UserContextProvide = ({children}: UserContextProvideProp) => {
