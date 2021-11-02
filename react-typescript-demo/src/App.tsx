@@ -1,6 +1,7 @@
 import './App.css';
-import { User } from './components/context/User';
-import { UserContextProvide } from './components/context/UserContext';
+import { Counter } from './components/class_comp/Counter';
+// import { User } from './components/context/User';
+// import { UserContextProvide } from './components/context/UserContext';
 // import { Box } from './components/context/Box';
 // import { Rectangle } from './components/context/Rectangle';
 // import { ThemeContextProvider } from './components/context/ThemeContext';
@@ -66,11 +67,14 @@ function App() {
       <ThemeContextProvider>
         <Rectangle/>
       </ThemeContextProvider>
-      */}
+      
 
       <UserContextProvide>
         <User/>
       </UserContextProvide>
+      */}
+
+      <Counter message="The counter value is "/>
 
     </div>
   );
